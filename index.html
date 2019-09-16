@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CYOAwesome by @McFunkypants</title>
+	<meta name="description" content="CYOAwesome by @McFunkypants">
+	<meta name="author" content="McFunkypants">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite" >
+	<link rel="stylesheet" href="CYOAwesome.css">
+	<link rel="stylesheet" href="libs/animate.css">
+	<script src="libs/howler.core.min.js"></script>
+</head>
+<body>
+
+<div id='game' onclick='hurryup()'>
+	<div id='face_left'></div>
+	<div id='face_right'></div>
+	<div id='story_so_far'></div>
+	<div id='current_scene'></div>
+	<div id='choice_container'><div id='current_choices'></div></div>
+	<div id='swingmeter'>
+		<div id='swingtoolow'></div>
+		<div id='swinggoodlow'></div>
+		<div id='swingsweetlow'></div>
+		<div id='swingsweetest'></div>
+		<div id='swingsweethigh'></div>
+		<div id='swinggoodhigh'></div>
+		<div id='swingtext'>SWING METER</div>
+		<div id='swingpower'></div>
+	</div>
+</div>
+
+<textarea id="game_source">
+INTRO
+
+"Look here I will not bit about the bush, I may not be as bad as that clown Fikile, but it is clear that am no longer as effective as before, I cannot function freely because of the corrupted government. I look like an idiot in a police uniform, look now am supposed to solve this Xhenophobia saga which they created to shift focus from the Watson case. That is why I am appointing you to head this case, Do you accept this challenge?"  
+[Bheki.jpg]
+- I am honoured sir, I accept the Job [DEPLOY]
+- I am sorry sir but I have to decline the offer
+DEPLOY
+// Minimal VN style example
+// made to match Chris Markle's mockup
+// Public domain images by DasBilligeAlien
+// https://opengameart.org/content/visual-novel-tutorial-set
+
+"You need to find out what happened, was it a foul play, just an accident or his death was faked. Your first lead is to target the two eye witnesses, who claim to have seen this. however you have a very limited time to crack the case, do not attract negative publicity, and stay alive.."
+[Bheki.jpg]
+
+- Go to the witness [WITNESS]
+
+WITNESS
+
+"Tell me what you saw on that day?" [guy.png] 
+
+"I saw mr Watson speeding a white Toyota towards the arrival area as the road curved he did not slow down and hit the concrete pillar" [gal.png]
+
+- Move to the next witness [WITNESS2]
+- Continue interview[THE FIGHT]
+
+- Restart [INTRO]
+THE FIGHT
+"How did you know that it was Mr Watson?" [guy.png]
+
+"I assume it was him, since they found his body there" [gal.png]
+
+"So you saw the body?" [guy.png]
+
+"No Officer I only saw the car"
+
+- Move to the next witness. [WITNESS2]
+- Continue interview. [CONTINUATION]
+- Take the witness into custody.[PUBLICITY]
+
+CONTINUATION
+Time running out...the witness is starting to loose patience with you!
+"It seems like you are unsure of your stories, am beginning to doubt your testimony" [guy.png]
+
+"Am I your suspect Officer, cause if that is the case I would need my lawyer?" [gal.png]
+
+- Allow the witness to call their lawyer. [THE LAWYER]
+- Move to the next witness[WITNESS2]
+
+THE LAWYER
+Unfortunately you have run out of time and the lawyer has discredited the methods you used on his client, you have reached a dead End!!!
+													Game Over!
+WITNESS2
+Detective your second witness gave almost the same statement except that he claims he went to the scene after the accident...
+
+- Interview the second witness[WITNESS2TEST]
+- Go to the scene[PHONECALL]
+
+WITNESS2TEST
+
+"Tell me about what you saw at the scene, what did you see there?" [guy.png]
+
+"I saw the Toyota crashed beyond recognition on the front"
+
+"Did you see the body?"
+
+"No I did not, as we were blocked from the scene"
+
+"Is there anything atleast what you noticed, anything?"
+
+"Well it was strange that the officers who were attending to this, were not wearing gloves and there was no red tape"
+
+Clearly something is fishy about this case, nobody saw Mr Watson driving the car or his body after the accident,
+and what this witness has just said gives you a reason to dig deeper...How about you go to the scene, who knows you might find something.
+
+-Go to the scene[PHONECALL]
+
+PHONECALL
+Your phone is ringing...Blocked number
+[Ring.jpg]
+
+-Decline[DEATH]
+-Accept[THREAT]
+
+THREAT
+A disguised voice on the phone...
+[Ongoing.png]
+
+
+
+"Listen and listen carefully, you are walking a path of death... We know where you live and everything about you, quit while you are ahead" [no.png]
+
+"Who am I talking to?" [no.png]
+
+"That is not important, what is important is that you drop the case immediately"
+
+         Call dropped...
+- Drop the case[DROP]
+- Ignore and continue[DEATH]
+- Stay low profile for a while[LOW]
+- Call a press conference[PRESS]
+
+DEATH
+Daily News Report
+
+[Daily.png]
+
+"Investigator Dies in a freaky accident towards O.R Tambo Airport."	
+
+
+DROP
+<h2>You played it safe, good for you, But the case is not solved...You could have done better...</h2>
+	 
+LOW
+<h2>You are now on a low profile Mode...Do not miss the next episode...</h2>
+</textarea>
+<script src="CYOAwesome.js"></script>
+</body>
+</html>
